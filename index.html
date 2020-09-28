@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="never">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pre_Player</title>
+    <link rel="stylesheet" href="">
+    <style>
+    </style>
+</head>
+
+<body style="background: black;">
+    <video src="Main_2.mp4" preload style="height:100%" id="video">
+    </video>
+    <script>
+        "use strict";
+
+        async function prepare() {
+            let video = document.getElementById("video")
+            video.play()
+        }
+
+        prepare();
+
+    </script>
+</body>
+
+</html>
